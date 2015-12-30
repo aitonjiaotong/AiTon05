@@ -97,11 +97,6 @@
             android:label="@string/title_activity_mine_info" >
         </activity>
         <activity
-            android:name=".Activity.CheckHeadImg"
-            android:label="@string/title_activity_check_head_img"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-        <activity
             android:name=".Activity.LetterIndexActivity"
             android:label="@string/title_activity_letter_index" >
         </activity>
