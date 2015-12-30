@@ -175,7 +175,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View v)
             {
-                Log.e("onClick ", "onClick ");
                 mMenu.toggle();
                 isTouch = true;
                 mCover_cover.setVisibility(View.GONE);
@@ -188,7 +187,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onSlidingMenuScrollChange(int l, int t, int oldl, int oldt)
             {
                 boolean isOpen = mMenu.getIsOpen();
-                Log.e("onScrollChange ", "onScrollChange " + isOpen);
                 isTouch = !isOpen;
                 if (isOpen)
                 {
@@ -303,7 +301,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onStop();
         //停止定位图层
         mBaiduMap.setMyLocationEnabled(false);
-        Log.e("onStop ", "onStop ");
         //停止定位
         mLocationClient.stop();
     }
@@ -320,7 +317,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onResume()
     {
         super.onResume();
-        Log.e("onResume ", "onResume ");
         //在activity执行onResume时执行mMapView. onResume ()，实现地图生命周期管理
         mBmapView.onResume();
     }
@@ -329,7 +325,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onPause()
     {
         super.onPause();
-        Log.e("onPause ", "onPause ");
         //在activity执行onPause时执行mMapView. onPause ()，实现地图生命周期管理
         mBmapView.onPause();
     }
@@ -459,7 +454,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (reverseGeoCodeResult != null)
         {
             mAddress = reverseGeoCodeResult.getAddress();
-            Log.e("-->>GeoCodeResult", mAddress);
             List<PoiInfo> poiList = reverseGeoCodeResult.getPoiList();
             if (poiList != null && poiList.size() > 0)
             {

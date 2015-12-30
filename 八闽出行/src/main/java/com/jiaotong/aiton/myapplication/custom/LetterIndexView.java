@@ -72,7 +72,6 @@ public class LetterIndexView extends View
                 isPressed = true;
                 String letter_down = "" + (char) ('A' + index);
                 this.listener.onLetterChanged(letter_down);
-                Log.e("--->>Event", "按下");
                 break;
 
             case MotionEvent.ACTION_MOVE:
@@ -80,7 +79,6 @@ public class LetterIndexView extends View
                 isPressed = true;
                 String letter_move = "" + (char) ('A' + index);
                 this.listener.onLetterChanged(letter_move);
-                Log.e("--->>Event", "移动");
                 break;
 
             case MotionEvent.ACTION_UP:
@@ -88,7 +86,6 @@ public class LetterIndexView extends View
                 isPressed = false;
                 index = -1;
                 this.listener.onActionUp();
-                Log.e("--->>Event", "抬起");
                 break;
 
             default:
