@@ -105,6 +105,10 @@
             android:name=".Activity.LetterIndexActivity"
             android:label="@string/title_activity_letter_index" >
         </activity>
+        <activity
+            android:name=".Activity.ReCharge"
+            android:label="@string/title_activity_re_charge" >
+        </activity>
     </application>
 
 </manifest>

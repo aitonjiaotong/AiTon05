@@ -4,7 +4,6 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -114,6 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initUI()
     {
+        findViewById(R.id.recharge).setOnClickListener(this);
         findViewById(R.id.login_info_linear).setOnClickListener(this);
         /**----底部Tab选项的点击事件----*/
         findViewById(R.id.booking_car).setOnClickListener(this);
@@ -335,6 +335,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent();
         switch (v.getId())
         {
+            case R.id.recharge:
+                intent.setClass(MainActivity.this,ReCharge.class);
+                startActivity(intent);
+                break;
             case R.id.login_info_linear:
                 intent.setClass(MainActivity.this, MineInfo.class);
                 startActivity(intent);

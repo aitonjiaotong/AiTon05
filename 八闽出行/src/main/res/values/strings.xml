@@ -22,6 +22,7 @@
     <string name="title_activity_mine_info">MineInfo</string>
     <string name="title_activity_check_head_img">CheckHeadImg</string>
     <string name="title_activity_letter_index">LetterIndexActivity</string>
+    <string name="title_activity_re_charge">ReCharge</string>
 
 
 </resources>
