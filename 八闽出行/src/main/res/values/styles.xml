@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="title_sytle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ActionBarTvStyle">
+        <item name="android:background">@drawable/actionbar_unselect_tv_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/aiton_basic_color</item>
+        <item name="android:textSize">@dimen/Title_Size</item>
+    </style>
+    
+    <style name="title_sytle02">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/Title_Size</item>
+    </style>
+    
+</resources>

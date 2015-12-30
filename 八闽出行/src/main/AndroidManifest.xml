@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiaotong.aiton.myapplication" >
+
+    <!-- 百度地图开发相关权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 百度地图开发KEY -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Vk95ZlfMCeQXNylrgDL7uQWj" />
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".Activity.BookingCar"
+            android:label="@string/title_activity_booking_car" >
+        </activity>
+        <activity
+            android:name=".Activity.CallCar"
+            android:label="@string/title_activity_call_car" >
+        </activity>
+        <activity
+            android:name=".Activity.AirCar"
+            android:label="@string/title_activity_air_car" >
+        </activity>
+        <activity
+            android:name=".Activity.CallCarForOthers"
+            android:label="@string/title_activity_call_car_for_others" >
+        </activity>
+        <activity
+            android:name=".Activity.CheckPassenger"
+            android:label="@string/title_activity_check_passenger" >
+        </activity>
+        <activity
+            android:name=".Activity.UsedAddress"
+            android:label="@string/title_activity_used_address"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".Activity.EstimatePrice"
+            android:label="@string/title_activity_estimate_price" >
+        </activity>
+        <activity
+            android:name=".Activity.GiftActivity"
+            android:label="@string/title_activity_gift"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".Activity.Flight"
+            android:label="@string/title_activity_flight" >
+        </activity>
+        <activity
+            android:name=".Activity.SelectLocationActivity"
+            android:label="@string/title_activity_select_location"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".Activity.MineInfo"
+            android:label="@string/title_activity_mine_info" >
+        </activity>
+        <activity
+            android:name=".Activity.CheckHeadImg"
+            android:label="@string/title_activity_check_head_img"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".Activity.LetterIndexActivity"
+            android:label="@string/title_activity_letter_index" >
+        </activity>
+    </application>
+
+</manifest>

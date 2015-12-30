@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="23.0.0"><source path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\res"/></dataSet><dataSet config="debug"><source path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res"><file name="ic_empty" path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\drawable-hdpi\ic_empty.png" qualifiers="hdpi" type="drawable"/><file name="ic_error" path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\drawable-hdpi\ic_error.png" qualifiers="hdpi" type="drawable"/><file name="ic_stub" path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\drawable-hdpi\ic_stub.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi" type="drawable"/><file name="custom_notify" path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\layout\custom_notify.xml" qualifiers="" type="layout"/><file name="custom_toast" path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\layout\custom_toast.xml" qualifiers="" type="layout"/><file path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\values\values.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><string name="app_name">lib_yuchen</string><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style></file><file path="G:\AndroidAiTon\AiTon\lib_HKL\build\intermediates\bundles\debug\res\values-v14\values-v14.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file></source></dataSet><dataSet config="main"><source path="G:\AndroidAiTon\AiTon\lib_HKL\src\androidTest\res"/><source path="G:\AndroidAiTon\AiTon\lib_HKL\build\generated\res\rs\androidTest\debug"/><source path="G:\AndroidAiTon\AiTon\lib_HKL\build\generated\res\resValues\androidTest\debug"/></dataSet><mergedItems/></merger>

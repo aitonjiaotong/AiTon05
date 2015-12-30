@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context="com.jiaotong.aiton.myapplication.MineInfo">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/aiton_basic_color"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/Title_img_marginLeft"
+            android:src="@mipmap/icon_left"/>
+
+        <TextView
+            style="@style/title_sytle02"
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人信息保存"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/Title_tv_marginRight"
+            android:text="保存"
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <com.jiaotong.aiton.myapplication.custom.CircleImageView
+                android:src="@mipmap/icon_passenger_man"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/head_img"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="@color/line_Division_color"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/little_view_height"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/little_view_imgANDtv_marginLeftORright"
+                    android:layout_toEndOf="@+id/imageView34"
+                    android:background="@null"
+                    android:hint="请输入您的真实姓名，长度2-15个汉字"
+                    android:textSize="@dimen/EditTextSize"/>
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/little_view_imgANDtv_marginLeftORright"
+                    android:src="@mipmap/icon_people"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/line_Division_color"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/little_view_height"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/little_view_imgANDtv_marginLeftORright"
+                    android:src="@mipmap/icon_sex"/>
+
+                <ImageView
+                    android:src="@mipmap/btn_man_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/man"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView35"
+                    android:layout_marginStart="@dimen/little_view_imgANDtv_marginLeftORright"/>
+
+                <ImageView
+                    android:src="@mipmap/btn_woman_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/woman"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/man"
+                    android:layout_marginStart="30dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/line_Division_color"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/little_view_height"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+
+                    android:id="@+id/imageView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/little_view_imgANDtv_marginLeftORright"
+                    android:src="@mipmap/icon_user_phone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+86"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView50"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView38"
+                    android:layout_marginStart="@dimen/little_view_imgANDtv_marginLeftORright"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15871105320"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView51"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/textView50"
+                    android:layout_marginStart="5dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_margin="@dimen/little_view_imgANDtv_marginLeftORright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*填写真实信息，乘车时可获得百万保障！"
+        android:id="@+id/textView52"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:textColor="#ff0000"
+        android:background="@drawable/exit_login_shape"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:id="@+id/exit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

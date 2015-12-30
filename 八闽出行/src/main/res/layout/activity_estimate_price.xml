@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.jiaotong.aiton.myapplication.Activity.EstimatePrice">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/aiton_basic_color"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/Title_img_marginLeft"
+            android:src="@mipmap/icon_left"/>
+
+        <TextView
+            style="@style/title_sytle02"
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="价格明细"/>
+
+        <RelativeLayout
+            android:id="@+id/back_rela"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/official_car_img"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公务轿车"
+            android:id="@+id/textView14"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大众帕萨特 丰田凯美瑞或类似5座车型"
+            android:id="@+id/textView15"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="套餐价¥50.0(含20分钟8公里)"
+                android:id="@+id/textView16"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textColor="#ff0000"
+                android:id="@+id/textView26"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实际用车费用"
+                android:id="@+id/textView34"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+                android:layout_marginRight="@dimen/little_view_imgANDtv_marginLeftORright"
+                android:orientation="vertical"
+                android:background="@color/line_Division_color"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp">
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+                android:layout_marginRight="@dimen/little_view_imgANDtv_marginLeftORright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预估费用仅提供参考，实际费用可能因交通、天气或其他原因而不同。"
+                android:id="@+id/textView37"/>
+
+            <TextView
+                android:layout_marginRight="@dimen/little_view_imgANDtv_marginLeftORright"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预估费用不包含路桥费、停车费等第三方收取的费用。"
+                android:id="@+id/textView36"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

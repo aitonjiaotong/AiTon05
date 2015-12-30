@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/view_marginTop01"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/little_view_height">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@mipmap/trip_start_icon"
+                    android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView10"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="17dp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="厦门"
+                    android:id="@+id/textView10"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:layout_marginStart="22dp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上车地址"
+                    android:id="@+id/from"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/textView10"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/line_Division_color"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent">
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/Collection01"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@mipmap/rating_check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView11"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/endAddress"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/line_Division_color"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/little_view_height">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/trip_arrived_icon"
+                        android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView12"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="17dp"/>
+
+                    <TextView
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="厦门"
+                        android:id="@+id/textView12"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/imageView12"
+                        android:layout_marginStart="22dp"/>
+
+                    <TextView
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="输入下车地址为您预估费用"
+                        android:id="@+id/to"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/textView12"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:background="@color/line_Division_color"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"/>
+
+                <RelativeLayout
+                    android:id="@+id/Collection02"
+                    android:layout_weight="6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/rating_check2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView13"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

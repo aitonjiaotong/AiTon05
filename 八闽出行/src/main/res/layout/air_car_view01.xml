@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/flight_rela"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/little_view_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_marginTop01"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+            android:src="@mipmap/flight"/>
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/myuser_arrows_right_gray"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/little_view_imgANDtv_marginLeftORright"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/imageView30"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView29">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入航班号"
+                android:id="@+id/textView40"/>
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="填写航班号，航班延误我们会免费等候"
+                android:id="@+id/textView41"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

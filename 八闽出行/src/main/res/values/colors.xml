@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aiton_basic_color">#378bff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#F0F0F0</color>
+    <color name="aiton_basic_deep_color">#9c30bfe3</color>
+    <color name="black">#000000</color>
+    <color name="line_Division_color">#c8c8c8</color>
+    <color name="light_color">#5c9cf5</color>
+    <color name="deep_gray">#c0c0c0</color>
+    <color name="Translucent_color_gray">#66000000</color>
+    <color name="text_color_gray">#999999</color>
+</resources>
